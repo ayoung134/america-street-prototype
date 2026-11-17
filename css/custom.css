@@ -143,3 +143,24 @@
     left: 0;
     border: 0;
 }
+
+.custom-button-group a {
+	text-decoration: none;
+	color: #ffff;
+	background: #CA482D;
+	padding: 4px 30px;
+	font-size: 1.3rem;
+	border-radius: 5px;
+	/* transition: all 0.7s ease; */
+	white-space: nowrap;
+}
+
+.custom-button-group a:hover {
+	color: #ffff;
+	background: #5E9094;
+}
+
+.custom-button-group a:active {
+	color: #1B1C46;
+	background: #5E9094;
+}
