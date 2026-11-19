@@ -400,8 +400,8 @@
 
 .custom-video-section p,
 .custom-info-section p {
-    max-width: 750px;
-    margin: 0 auto 30px;
+    max-width: 50px;
+    margin: 0 0 20px;
     line-height: 1.7;
 }
 
