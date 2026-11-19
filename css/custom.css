@@ -695,3 +695,40 @@
     }
 
 }
+
+/* Contemporary Worship Section */
+
+.worship-section {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: visible !important;
+}
+
+.worship-section .sp-section-slide,
+.worship-section .sp-section-content,
+.worship-section .sp-grid,
+.worship-section .sp-row {
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: visible !important;
+}
+
+@media (max-width: 768px) {
+    .worship-section .sp-row {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .worship-section .sp-col-12 {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: 0 0 100% !important;
+    }
+
+    .worship-section .sp-image-holder img {
+        width: 100% !important;
+        height: auto !important;
+    }
+}
