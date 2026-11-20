@@ -743,3 +743,10 @@
     }
 }
 
+/* header */
+
+.sp-header-placeholder{
+	position: sticky;
+	
+}
+
