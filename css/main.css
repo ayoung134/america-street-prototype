@@ -22,9 +22,11 @@ html {
 
 body {
   background-color: #5e9094;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   min-height: 100vh;
-  background: #510e10;
+  background: #ffffff;
 }
 
 .navbar {
@@ -71,19 +73,18 @@ body {
 
 .navbar-container .navbar-menu li a {
   text-decoration: none;
-  color: #510e10;
+  color: #ffffff;
   padding: 3px 20px;
-  font-size: 1.3rem;
+  font-size: 1 rem;
   border-radius: 20px;
   border: 2px solid transparent;
   transition: all 0.7s ease;
   white-space: nowrap;
+  font-weight: 700;
 }
 
 .navbar-container .navbar-menu li a:hover {
-  color: #232c65;
-  background: #232c6534;
-  border: 2px solid #232c65;
+  color: #1b1c46;
 }
 
 /* navbartoggle */
