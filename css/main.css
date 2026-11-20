@@ -187,6 +187,45 @@ body {
 
 }
 
+/* TEXT OVER VIDEO */
+
+.full-video-section {
+    position: relative;
+}
+
+.video-overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+    color: #ffffff;
+    z-index: 2;
+}
+
+.video-overlay-text h1 {
+    font-size: 42px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.video-overlay-text p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .video-overlay-text h1 {
+        font-size: 28px;
+    }
+
+    .video-overlay-text p {
+        font-size: 16px;
+    }
+}
+
 /* contemporary worship section */
 
 .worship-info {
@@ -358,12 +397,13 @@ body {
 
 .custom-button-group {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content:flex-start;
+    align-items: left;
     gap: 75px;
     flex-wrap: wrap;
     margin: 35px 0;
     margin-top: -15px;
+    margin-left: 35px;
 }
 
 .custom-button {
@@ -401,7 +441,7 @@ body {
     }
 }
 
-/* video section */
+/* youtubevideo section */
 /* =================================
    CUSTOM WIREFRAME SECTIONS
 ================================= */
