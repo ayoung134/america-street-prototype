@@ -37,7 +37,7 @@ body {
   width: 100%;
   padding-right: 34px;
   padding-left: 24px;
-  position: sticky;
+  /* position: sticky; */
   top: 0;
   background: #5e9094;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.312);
@@ -160,6 +160,7 @@ body {
     overflow: hidden;
     margin: 0;
     padding: 0;
+    margin-bottom: 40px;
 }
 
 .full-video-section video {
@@ -185,3 +186,170 @@ body {
     }
 
 }
+
+/* contemporary worship section */
+
+.worship-info {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1.08fr;
+    gap: 40px;
+    align-items: start;
+    padding: 50px 2.3% 70px;
+    padding-left: 40px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+.worship-text h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.95em;
+    font-weight: 400;
+    line-height: 1em;
+    margin: 0 0 10px;
+    color: #111111;
+}
+
+.worship-text h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.95em;
+    font-weight: 400;
+    line-height: 1.45em;
+    margin: 0 0 25px;
+    margin-bottom: 10px;
+    color: #5e9094;
+}
+
+.worship-text p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.15em;
+    line-height: 1.5em;
+    font-weight: 400;
+    color: #222222;
+    margin: 0 0 35px;
+}
+
+.worship-image {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.worship-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* QUOTE SECTION */
+
+.worship-quote {
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("../img/quoteimage.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 100px 20px 60px;
+}
+
+/* CURVED WHITE TRANSITION */
+
+.quote-curve {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.quote-curve svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* QUOTE TEXT */
+
+.quote-content {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    color: #ffffff;
+}
+
+.quote-content h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    margin: 0 0 25px;
+}
+
+.quote-content p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19px;
+    margin: 0;
+    font-weight: 400;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 900px) {
+
+    .worship-info {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .worship-image {
+        height: 400px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .worship-info {
+        padding: 35px 20px 50px;
+    }
+
+    .worship-text h2,
+    .worship-text h3 {
+        font-size: 27px;
+    }
+
+    .worship-text p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .worship-image {
+        height: 280px;
+    }
+
+    .worship-quote {
+        min-height: 250px;
+    }
+
+    .quote-content h2 {
+        font-size: 25px;
+    }
+
+    .quote-content p {
+        font-size: 16px;
+    }
+
+}
+
