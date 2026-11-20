@@ -401,6 +401,68 @@ body {
     }
 }
 
+/* video section */
+/* =================================
+   CUSTOM WIREFRAME SECTIONS
+================================= */
+
+/* Shared section styling */
+.custom-section-inner {
+    width: 90%;
+    max-width: 1150px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.custom-video-section,
+.custom-info-section,
+.custom-carousel-section {
+    padding: 70px 0;
+    box-sizing: border-box;
+}
+
+.custom-video-section h2,
+.custom-info-section h2,
+.custom-carousel-section cuh2 {
+    margin: 0 0 20px;
+    font-size: 32px;
+    line-height: 1.3;
+    font-weight: 400px;
+}
+
+.custom-video-section p,
+.custom-info-section p {
+    max-width: 750px;
+    margin: 0 auto 30px;
+    line-height: 1.7;
+}
+
+
+/* =================================
+   VIDEO
+================================= */
+
+.custom-video-section {
+    background-color: #dfeff5;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    aspect-ratio: 16 / 9;
+}
+
+.video-container iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: 0;
+}
+
 
 
 /* carousel */
@@ -509,3 +571,4 @@ body {
         right: -10px;
     }
 }
+
