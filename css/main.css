@@ -5,3 +5,147 @@
     light blue: #99d1cf
     red: #ca482d
     dark blue: #1b1c46 */
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* start navbar */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #5e9094;
+  font-family: "Roboto Condensed", sans-serif;
+  min-height: 100vh;
+  background: #510e10;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 175px;
+  width: 100%;
+  padding-right: 34px;
+  padding-left: 24px;
+  position: sticky;
+  top: 0;
+  background: #5e9094;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  z-index: 999;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 0 5 rem;
+  max-width: 1600px
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.logo img {
+  width: 75%;
+  padding-left: 12px;
+  
+}
+
+.navbar-container .navbar-menu {
+  display: flex;
+  text-align: center;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.navbar-container .navbar-menu li a {
+  text-decoration: none;
+  color: #510e10;
+  padding: 3px 20px;
+  font-size: 1.3rem;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  transition: all 0.7s ease;
+  white-space: nowrap;
+}
+
+.navbar-container .navbar-menu li a:hover {
+  color: #232c65;
+  background: #232c6534;
+  border: 2px solid #232c65;
+}
+
+/* navbartoggle */
+
+.navbar-toggle {
+  display: none;
+  background: transparent;
+  padding: 10px;
+  border: none;
+  cursor: pointer
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background: #b32428;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    backdrop-filter: blur(10px);
+  }
+
+  .navbar-container .navbar-menu {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1.7rem !important;
+    position: absolute;
+    height: 100vh;
+    width: 250px;
+    top: 0;
+    right: 0;
+    padding: 5rem 1.5rem;
+    box-shadow: 0 10px 10px #000000;
+    backdrop-filter: blur(10px);
+    background-color: #fff7e0ba;
+  }
+
+  .navbar-container .navbar-menu.active {
+    display: flex;
+  }
+
+  .navbar-toggle {
+    display: block;
+    z-index: 999;
+  }
+
+  /* hamburger */
+
+.navbar-toggle.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-toggle.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.navbar-toggle.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}}
+/* end navbar */
