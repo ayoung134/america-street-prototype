@@ -826,9 +826,10 @@ body {
 .footer-logo img {
     display: block;
     width: 100%;
-    max-width: 190px;
+    max-width: 290px;
     height: auto;
     object-fit: contain;
+    margin-right: 30px;
 }
 
 /* =================================
