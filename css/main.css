@@ -623,6 +623,10 @@ body {
    HORIZONTAL IMAGE CAROUSEL
 ================================= */
 
+.custom-carousel-section {
+    background-color: #dfeff5;
+}
+
 .carousel-wrapper {
     position: relative;
     display: flex;
@@ -778,7 +782,7 @@ body {
 }
 
 .footer-column a {
-    color: #ca482d;
+    color: #5e9094;
     text-decoration: none;
     font-size: 16px;
     line-height: 1.8;
@@ -787,7 +791,7 @@ body {
 }
 
 .footer-column a:hover {
-    color: #99d1cf;
+    color: #ca482d;
 }
 
 /* SECOND HEADING */
@@ -825,11 +829,12 @@ body {
     justify-content: flex-end;
     align-self: stretch;
     padding-top: 20px;
+    padding-right: 25px;
 }
 
 .footer-logo img {
     display: block;
-    width: 120%;
+    width: 125%;
     max-width: 240px;
     height: auto;
     object-fit: contain;
