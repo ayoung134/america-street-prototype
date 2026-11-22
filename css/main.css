@@ -816,21 +816,25 @@ body {
     color: #ca482d;
 }
 
-/* ELC LOGO */
+
+/* ELC LOGO - BOTTOM RIGHT */
 
 .footer-logo {
-    align-items: center;
-    justify-content: flex-start;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    align-self: stretch;
+    padding-top: 20px;
 }
 
 .footer-logo img {
     display: block;
-    width: 100%;
-    max-width: 290px;
+    width: 120%;
+    max-width: 240px;
     height: auto;
     object-fit: contain;
-    margin-right: 30px;
 }
+
 
 /* =================================
    TABLET
@@ -897,5 +901,12 @@ body {
         max-width: 160px;
     }
 
+    @media (max-width: 600px) {
+    .footer-logo {
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-top: 0;
+    }
+}
 }
 
