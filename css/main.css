@@ -488,11 +488,11 @@ body {
     font-family: 'aktiv-grotesk', sans-serif;
 }
 
-.events-heading-container h2 {
+/* .events-heading-container h2 {
     font-size: 'aktiv-grotesk-condensed', sans-serif;
     font-style: italic;
     font-weight: 700;
-} 
+}  */
 
 .events-card-content h3 {
     font-size: 22px;
@@ -519,9 +519,10 @@ body {
 }
 
 .events-heading {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'aktiv-grotesk-condensed', sans-serif;
     font-size: 1.95em;
-    font-weight: 400;
+    font-weight: 700;
+    font-style: italic;
     line-height: 1em;
     color: #111111;
     text-align: left;
@@ -601,6 +602,7 @@ body {
     background-color: #ca482d;
     padding: 20px 30px;
     font-size: 16px;
+    font-weight: 700;
     border-radius: 12px;
     text-align: center;
     transition: background-color 0.3s ease;
