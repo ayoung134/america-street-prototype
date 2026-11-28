@@ -10,6 +10,23 @@ navbarToggle.addEventListener('click', () => {
     navbarMenu.classList.toggle('active');
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const navbar = document.querySelector(".navbar");
+    let lastScrollTop = 0;
+
+    window.addEventListener("scroll", function () {
+        const currentScroll = window.pageYOffset;
+
+        if (currentScroll > lastScrollTop && currentScroll > 175) {
+            navbar.classList.add("navbar-hidden");
+        } else {
+            navbar.classList.remove("navbar-hidden");
+        }
+
+        lastScrollTop = Math.max(currentScroll, 0);
+    });
+});
+
 // End navbar
 
 

@@ -37,12 +37,17 @@ body {
   width: 100%;
   padding-right: 34px;
   padding-left: 24px;
-  /* position: sticky; */
+  position: sticky;
   top: 0;
   background: #5e9094;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.312);
   backdrop-filter: blur(10px);
-  z-index: 999;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+.navbar.navbar-hidden {
+    transform: translateY(-100%);
 }
 
 .navbar-container {
@@ -178,6 +183,18 @@ body {
 
     .navbar-toggle.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        margin-top: 0;
+        top: 0;
+    }
+
+    body {
+        margin-top: 0;
+        padding-top: 0;
     }
 }
 
