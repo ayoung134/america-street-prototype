@@ -116,10 +116,7 @@ body {
 
     /* Keep navigation above the video and page content */
     .navbar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
+        position: sticky;
         z-index: 1000;
     }
 

@@ -27,26 +27,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    const navbar = document.querySelector(".navbar");
-
-    if (!navbar) return;
-
-    let lastScrollTop = 0;
-
-    window.addEventListener("scroll", function () {
-        const currentScroll = window.scrollY;
-
-        if (currentScroll > lastScrollTop && currentScroll > 175) {
-            navbar.classList.add("navbar-hidden");
-        } else {
-            navbar.classList.remove("navbar-hidden");
-        }
-
-        lastScrollTop = Math.max(currentScroll, 0);
-    }, { passive: true });
-});
-
 // End navbar
 
 
