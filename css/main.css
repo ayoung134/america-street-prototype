@@ -116,7 +116,10 @@ body {
 
     /* Keep navigation above the video and page content */
     .navbar {
-        position: relative;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
         z-index: 1000;
     }
 
@@ -186,17 +189,6 @@ body {
     }
 }
 
-@media (max-width: 768px) {
-    .navbar {
-        margin-top: 0;
-        top: 0;
-    }
-
-    body {
-        margin-top: 0;
-        padding-top: 0;
-    }
-}
 
 /* video */
 
